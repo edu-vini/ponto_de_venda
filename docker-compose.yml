@@ -1,0 +1,9 @@
+services:
+  mysql:
+    container_name: 'mysql-pdv'
+    image: mysql:latest
+    environment:
+      - 'MYSQL_DATABASE=pdv'
+      - 'MYSQL_ROOT_PASSWORD=matrix'
+    ports:
+      - '3310:3306'
